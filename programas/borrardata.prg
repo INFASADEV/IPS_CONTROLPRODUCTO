@@ -1,0 +1,20 @@
+CLOSE TABLES all
+use receppedidos EXCLUSIVE
+DELETE ALL
+PACK
+
+use receppedidosdet EXCLUSIVE
+DELETE ALL
+PACK
+
+use receppedidosdetdet EXCLUSIVE
+DELETE ALL
+PACK
+
+use recepbultos EXCLUSIVE
+DELETE ALL
+PACK
+
+
+
+CLOSE TABLES all

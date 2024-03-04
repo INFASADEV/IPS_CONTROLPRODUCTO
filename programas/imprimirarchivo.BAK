@@ -1,0 +1,3 @@
+PARAMETERS archivo,namobj
+&namobj= CREATEOBJECT("Shell.Application")
+&namobj.ShellExecute(ALLTRIM(archivo), SET('PRINTER',1), '', 'printto', 0 )

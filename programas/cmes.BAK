@@ -1,0 +1,31 @@
+PARAMETERS MES
+PUBLIC CMES
+
+DO CASE 
+	CASE MES=1
+	CMES='Enero'
+	CASE MES=2
+	CMES='Febrero'
+	CASE MES=3
+	CMES='Marzo'
+	CASE MES=4
+	CMES='Abril'
+	CASE MES=5
+	CMES='Mayo'
+	CASE MES=6
+	CMES='Junio'
+	CASE MES=7
+	CMES='Julio'
+	CASE MES=8
+	CMES='Agosto'
+	CASE MES=9
+	CMES='Septiembre'
+	CASE MES=10
+	CMES='Octubre'
+	CASE MES=11
+	CMES='Noviembre'
+	CASE MES=12
+	CMES='Diciembre'
+ENDCASE
+
+RETURN CMES

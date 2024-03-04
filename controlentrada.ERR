@@ -1,0 +1,98 @@
+Program c:\controlentradaproducto\programas\mensajesql.prg has the following errors:
+    Unknown MATRIZ - Undefined
+
+Program c:\controlentradaproducto\programas\misprocedures.prg has the following errors:
+    Unknown VECTOR - Undefined
+
+Visual Class Library c:\controlentradaproducto\librerias\miclasepro.vcx has the following errors:
+    Proc./Func. MISPROCEDURES - Undefined
+    File 0001.PNG - Undefined
+    File 0002.PNG - Undefined
+    File CIUDAD25X25.PNG - Undefined
+    File DEPARTAMENTO25X25.PNG - Undefined
+    File EYE1.PNG - Undefined
+    File SHOPCART-APPLY_32.PNG - Undefined
+
+Form c:\controlentradaproducto\formularios\aggprorecx.scx has the following errors:
+    File ADD1.PNG - Undefined
+    File CALENDAR_ADD.PNG - Undefined
+    File CALENDAR-32.PNG - Undefined
+    File DEL1.PNG - Undefined
+
+Visual Class Library c:\controlentradaproducto\librerias\conad.vcx has the following errors:
+    File 0071.ICO - Undefined
+    File CALENDAR_VIEW_WEEK.PNG - Undefined
+
+Form c:\controlentradaproducto\formularios\calendario.scx has the following errors:
+    File INDTOUCH2.PNG - Undefined
+    File INDTOUCHL2.PNG - Undefined
+    File ADD32.PNG - Undefined
+
+Form c:\controlentradaproducto\formularios\distribucionbultos.scx has the following errors:
+    File DISTRIBUTION.PNG - Undefined
+    File MAKE_KDEVELOP.GIF - Undefined
+
+Form c:\controlentradaproducto\formularios\aggprorecy.scx has the following errors:
+    File ADD1.PNG - Undefined
+    File CALENDAR_ADD.PNG - Undefined
+    File CALENDAR-32.PNG - Undefined
+    File DEL1.PNG - Undefined
+
+Form c:\controlentradaproducto\formularios\aggprorec.scx has the following errors:
+    File CALENDAR_ADD.PNG - Undefined
+    File CALENDAR-32.PNG - Undefined
+    File ADD32.PNG - Undefined
+    File BG_GRIS.JPG - Undefined
+    File SINC32.PNG - Undefined
+    File SAVE32.PNG - Undefined
+    File BACK32.PNG - Undefined
+    File TRASH32.PNG - Undefined
+    File OKCHECK.PNG - Undefined
+    File OK1_25X25.PNG - Undefined
+    File ERR_25X25.PNG - Undefined
+    File MP_69X69.PNG - Undefined
+    File ME_69X69.PNG - Undefined
+    File ND69.PNG - Undefined
+
+Form c:\controlentradaproducto\formularios\aggprorec2.scx has the following errors:
+    File CALENDAR_ADD.PNG - Undefined
+    File CALENDAR-32.PNG - Undefined
+    File ADD32.PNG - Undefined
+    File SINC32.PNG - Undefined
+    File SAVE32.PNG - Undefined
+    File BACK32.PNG - Undefined
+    File TRASH32.PNG - Undefined
+
+Form c:\controlentradaproducto\formularios\messageboxgrandepreguntas.scx has the following errors:
+    File INDTOUCH2.PNG - Undefined
+    File INDTOUCHL2.PNG - Undefined
+
+Form c:\controlentradaproducto\formularios\messageboxgrandepreguntasestado.scx has the following errors:
+    File CAMERA_TEST.GIF - Undefined
+
+Form c:\controlentradaproducto\formularios\tecladonumericoba.scx has the following errors:
+    File ARROW-FULL-LEFT-32.PNG - Undefined
+    File BUTTON_CANCEL.GIF - Undefined
+
+Form c:\controlentradaproducto\formularios\messageboxgrandepreguntasact.scx has the following errors:
+    File INDTOUCH2.PNG - Undefined
+    File INDTOUCHL2.PNG - Undefined
+
+Program c:\controlentradaproducto\programas\correo_resultado_programacion.prg has the following errors:
+    Form CONTROLPIN - Undefined
+    Form REPORTERIA_PRODUCCION_DETALLE - Undefined
+    Form BUSCAMATPRI - Undefined
+    Form COSTEO_LOTES_PRODCCION_RELEASE - Undefined
+    Form COSTEO_LOTES_PRODUCCION_DETALLE - Undefined
+    Form UNIFICA_CONCEPTO_OC_DETALLE - Undefined
+    Form UNIFICACION_DETALLE_COSTO_OC - Undefined
+    Form DETALLE_COSTO_OC - Undefined
+    Application FOXYPREVIEWER - Undefined
+    Form CORREOORDENCOMPRA - Undefined
+    Report ORDENDECOMPRA - Undefined
+    Unknown SQL_LIMPIAR_ERROR - Undefined
+    Unknown PROGBUSEMP - Undefined
+    Form ZOOM_CC_EDITAR - Undefined
+    Form COSTEO_LOTES_PRODCCION_OEMOV - Undefined
+    Visual Class Library PROGRESSBAREX - Undefined
+

@@ -1,0 +1,16 @@
+_screen.WindowState= 1
+_screen.Visible= .F. 
+SET SAFETY OFF
+SET TALK OFF
+SET CONSOLE OFF
+SET ECHO OFF
+SET STRICTDATE TO 0 
+SET DELETED ON 
+SET EXACT ON
+SET NOTIFY OFF
+DO paths
+PUBLIC principalinicio,aggprorec,redest,login
+redest = 0
+DO FORM principalinicio NAME principalinicio LINKED
+*DO FORM login NAME login LINKED
+READ events

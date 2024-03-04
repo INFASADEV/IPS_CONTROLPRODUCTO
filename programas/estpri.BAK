@@ -1,0 +1,66 @@
+FUNCTION GetNumberOfJobs(tcPrinterName)
+LOCAL lnOK, lcErrorTxt, lnHandle, lnNumberOfJobs, lnNeeded, lcBuffer, lcTab, lcCrLf
+ 
+DECLARE Long GetLastError IN kernel32.dll 
+lcCrLf = CHR(13) + CHR(10)
+lcTab = CHR(9)
+lnHandle = 0
+ 
+* Open a Pinter
+lnOK = OpenPrinter( tcPrinterName, @lnHandle, NULL) 
+IF lnOK = 0 THEN 
+	lcErrorTxt = WinApiErrMsg(GetLastError())
+	? "Cannot Open Printer " + tcPrinterName + lcCrLf + lcTab + lcErrorTxt
+	RETURN -1
+ENDIF
+ 
+lnNeeded = 0
+lnNumberOfJobs = 0
+ 
+* Get the size of the buffer in lnNeeded 
+lnOK = EnumJobsCountOnly( lnHandle, 0, 127, 1, NULL, 0, @lnNeeded, @lnNumberOfJobs  )
+IF lnOK = 0 THEN 
+	IF GetLastError() <> 122   && The buffer too small error
+		lcErrorTxt = WinApiErrMsg(GetLastError())
+		? "Error enumerating Print Jobs for " + tcPrinterName + lcCrLf + lcTab + lcErrorTxt
+		= ClosePrinter( lnHandle )
+		RETURN -1
+	ENDIF	
+ENDIF	
+ 
+IF lnNeeded = 0
+	RETURN 0
+ENDIF	
+ 
+* Allocate the buffer of double size in case # jobs have been added in between
+lcBuffer = REPLICATE( CHR(0), lnNeeded*2)
+* Get the number of jobs
+lnOK = EnumJobsCountOnly( lnHandle, 0, 127, 1, @lcBuffer, @lnNeeded, @lnNeeded, @lnNumberOfJobs  )
+IF lnOK = 0 THEN 
+	lcErrorTxt = WinApiErrMsg(GetLastError())
+	? "Error enumerating PrintJobs for " + tcPrinterName + lcCrLf + lcTab + lcErrorTxt
+	= ClosePrinter( lnHandle )
+	RETURN -1
+ENDIF	
+ 
+= ClosePrinter( lnHandle )
+RETURN lnNumberOfJobs
+*----------------------------------------------------------------------------------------------
+ 
+FUNCTION OpenPrinter(tcPrinterName, thPrinter, tcDefault)
+DECLARE Long OpenPrinter IN WinSpool.Drv ;
+	String pPrinterName, Long@ phPrinter, String pDefault
+RETURN 	OpenPrinter(tcPrinterName, @thPrinter, tcDefault)
+ 
+FUNCTION ClosePrinter (thPrinter)
+DECLARE Long ClosePrinter IN WinSpool.Drv Long hPrinter
+RETURN ClosePrinter(thPrinter)
+ 
+FUNCTION EnumJobsCountOnly(thPrinter, tnFirstJob, tnNoJobs, tnLevel, ;
+	tnJob, tnBuf, tnNeeded, tnReturned)
+ 
+DECLARE Long EnumJobs IN WinSpool.Drv AS EnumJobsCountOnly ;
+	Long hPrinter, Long FirstJob, Long NoJobs, Long Level, ;
+	String pJob, Long cbBuf, Long @pcbNeeded, Long @pcReturned
+RETURN EnumJobsCountOnly(thPrinter, tnFirstJob, tnNoJobs, tnLevel, ;
+	tnJob, @tnBuf, @tnNeeded, @tnReturned)
